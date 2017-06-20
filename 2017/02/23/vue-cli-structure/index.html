@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>vue-cli目录结构以及配置说明 | DKing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本篇文章是根据原文翻译所得有疑问请参考原文，或联系我
+
+1. vue-cli使用步骤$ npm install -g vue-cli
+$ vue init webpack my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+2. 项目结构.
+├── build/                      # webpack config">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-cli目录结构以及配置说明">
+<meta property="og:url" content="http://yoursite.com/2017/02/23/vue-cli-structure/index.html">
+<meta property="og:site_name" content="DKing">
+<meta property="og:description" content="本篇文章是根据原文翻译所得有疑问请参考原文，或联系我
+
+1. vue-cli使用步骤$ npm install -g vue-cli
+$ vue init webpack my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+2. 项目结构.
+├── build/                      # webpack config">
+<meta property="og:updated_time" content="2017-02-23T02:06:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue-cli目录结构以及配置说明">
+<meta name="twitter:description" content="本篇文章是根据原文翻译所得有疑问请参考原文，或联系我
+
+1. vue-cli使用步骤$ npm install -g vue-cli
+$ vue init webpack my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+2. 项目结构.
+├── build/                      # webpack config">
+  
+    <link rel="alternative" href="/atom.xml" title="DKing" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" type="text/css" href="/./main.2d7529.css">
+  <style type="text/css">
+  
+    #container.show {
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+    }
+  </style>
+  
+
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      
+<div class="overlay" style="background: #4d4d4d"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="/img/head.jpg" class="js-avatar">
+		</a>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">DKing</a></h1>
+		</hgroup>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+    		
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/baikaishuixyz" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/p/1005052023580667/home?from=page_100505&mod=TAB&is_all=1#place" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-ting-ting-63-42/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      
+<nav id="mobile-nav">
+  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+	<div class="btnctn js-mobile-btnctn">
+  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/img/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author js-header-author">DKing</h1>
+			</hgroup>
+			
+			
+			
+				
+			
+			
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/baikaishuixyz" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/p/1005052023580667/home?from=page_100505&mod=TAB&is_all=1#place" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-ting-ting-63-42/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+
+			<nav class="header-menu js-header-menu">
+				<ul style="width: 50%">
+				
+				
+					<li style="width: 100%"><a href="/">主页</a></li>
+		        
+				</ul>
+			</nav>
+		</header>				
+	</div>
+	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-vue-cli-structure" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vue-cli目录结构以及配置说明
+    </h1>
+  
+
+        
+        <a href="/2017/02/23/vue-cli-structure/" class="archive-article-date">
+  	<time datetime="2017-02-23T02:06:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本篇文章是根据<a href="https://vuejs-templates.github.io/webpack/" target="_blank" rel="external">原文</a>翻译所得<br>有疑问请参考<a href="https://vuejs-templates.github.io/webpack/" target="_blank" rel="external">原文</a>，或<a href="mailto:baikaishuixyz@yahoo.com" target="_blank" rel="external">联系我</a></p>
+</blockquote>
+<h3 id="1-vue-cli使用步骤"><a href="#1-vue-cli使用步骤" class="headerlink" title="1. vue-cli使用步骤"></a>1. vue-cli使用步骤</h3><pre><code>$ npm install -g vue-cli
+$ vue init webpack my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+</code></pre><h3 id="2-项目结构"><a href="#2-项目结构" class="headerlink" title="2. 项目结构"></a>2. 项目结构</h3><pre><code>.
+├── build/                      # webpack config files
+│   └── ...
+├── config/                     
+│   ├── index.js                # main project config
+│   └── ...
+├── src/
+│   ├── main.js                 # app entry file
+│   ├── App.vue                 # main app component
+│   ├── components/             # ui components
+│   │   └── ...
+│   └── assets/                 # module assets (processed by webpack)
+│       └── ...
+├── static/                     # pure static assets (directly copied)
+├── test/
+│   └── unit/                   # unit tests
+│   │   ├── specs/              # test spec files
+│   │   ├── index.js            # test build entry file
+│   │   └── karma.conf.js       # test runner config file
+│   └── e2e/                    # e2e tests
+│   │   ├── specs/              # test spec files
+│   │   ├── custom-assertions/  # custom assertions for e2e tests
+│   │   ├── runner.js           # test runner script
+│   │   └── nightwatch.conf.js  # test runner config file
+├── .babelrc                    # babel config
+├── .editorconfig               # editor config
+├── .eslintrc.js                # eslint config
+├── index.html                  # index.html template
+└── package.json                # build scripts and dependencies
+</code></pre><h4 id="build"><a href="#build" class="headerlink" title="build/"></a>build/</h4><p>这个目录是开发环境和webpack生产环境的配置目录。一般情况下不用修改这个文件夹中的文件，除非你想自定义你的webpack loaders，loaders的修改在<code>build/webpack.base.conf.js</code>中。</p>
+<h4 id="config-index-js"><a href="#config-index-js" class="headerlink" title="config/index.js"></a>config/index.js</h4><p>这是项目build时的主要配置文件，它导出了最公用的配置项。进行个性化配置时可以参考<a href="https://vuejs-templates.github.io/webpack/proxy.html" target="_blank" rel="external">API Proxying During Development</a>和<a href="https://vuejs-templates.github.io/webpack/backend.html" target="_blank" rel="external">Integrating with Backend Framework</a></p>
+<a id="more"></a>
+<h4 id="src"><a href="#src" class="headerlink" title="src/"></a>src/</h4><p>这是开发项目的主要目录，你撸的代码绝大部分都在这个目录下，而在这个文件夹下如何构建你的目录结构则取决您的远见和需求；如果你使用了<code>Vuex</code>，你可以参阅<a href="http://vuex.vuejs.org/en/structure.html" target="_blank" rel="external">recommendations for Vuex applications</a>来构造响应目录。</p>
+<h4 id="static"><a href="#static" class="headerlink" title="static/"></a>static/</h4><p>如果您有一些静态文件，不希望被webpack处理，就可以放到这个目录下。/src下/assets目录下的静态文件会被webpack处理，build时这两个文件夹中的文件会被放倒同一个文件夹下，而/static下的文件会直接复制过去。</p>
+<h4 id="test-unit"><a href="#test-unit" class="headerlink" title="test/unit"></a>test/unit</h4><p>包含单元测试相关的文件，参考<a href="https://vuejs-templates.github.io/webpack/unit.html" target="_blank" rel="external">Unit Testing</a></p>
+<h4 id="test-e2e"><a href="#test-e2e" class="headerlink" title="test/e2e"></a>test/e2e</h4><p>包含e2e测试相关的文件，参考<a href="https://vuejs-templates.github.io/webpack/e2e.html" target="_blank" rel="external">End-to-end Testing</a></p>
+<h4 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h4><p>这是我们要开发的单页面应用的首页模版。在开发和生产时，webpack打包生成的资源文件会自动插入到该模版中，并最终渲染出来。</p>
+<h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h4><p>NPM的配置文件，包括build时的依赖和命令</p>
+<h3 id="3-项目的build命令"><a href="#3-项目的build命令" class="headerlink" title="3. 项目的build命令"></a>3. 项目的build命令</h3><pre><code>npm run build
+</code></pre><h3 id="4-Eslint配置"><a href="#4-Eslint配置" class="headerlink" title="4. Eslint配置"></a>4. Eslint配置</h3><p>默认使用<a href="http://eslint.org/" target="_blank" rel="external">Eslint</a>的标准模式</p>
+<ol>
+<li><p>如果你想自定义检测规则，可以修改<code>.eslintrc.js</code></p>
+</li>
+<li><p>可以选择其他的检测模式</p>
+</li>
+<li><p>其他的详细配置，可以参考 <a href="http://eslint.org/docs/rules/" target="_blank" rel="external">ESLint documentation</a></p>
+</li>
+</ol>
+<h3 id="5-预处理器"><a href="#5-预处理器" class="headerlink" title="5. 预处理器"></a>5. 预处理器</h3><p>这个样板工程支持最流行的css预处理技术，包括LESS, SASS, Stylus, PostCss。你只要安装对应的webpack loader就可以使用以上预处理技术。以SASS为例：</p>
+<pre><code>npm install sass-loader node-sass --save-dev
+</code></pre><blockquote>
+<p>注意node-sass也要安装，因为sass-loader依赖它</p>
+</blockquote>
+<h4 id="在组件内部使用预处理"><a href="#在组件内部使用预处理" class="headerlink" title="在组件内部使用预处理"></a>在组件内部使用预处理</h4><p>安装完成后，你可以在.vue文件中使用预处理技术，使用方法实在<code>&lt;style&gt;</code>标签中添加<code>lang</code>字段:</p>
+<pre><code>&lt;style lang=&quot;scss&quot;&gt;
+    /* write SASS! */
+&lt;/style&gt;
+
+* lang=&quot;scss&quot; corresponds to the CSS-superset syntax (with curly braces and semicolones).
+* lang=&quot;sass&quot; corresponds to the indentation-based syntax.
+</code></pre><h3 id="6-后处理器"><a href="#6-后处理器" class="headerlink" title="6. 后处理器"></a>6. 后处理器</h3><p>在<code>.vue</code>文件中的<code>css</code>部分默认都会经过<code>PostCss</code>处理, 你不用为此下载特殊的<code>loader</code>。你只需要简单的在<code>build/webpack.base.conf.js</code>中的<code>vue</code>部分添加要使用的<code>PostCss</code>插件即可。</p>
+<pre><code>// build/webpack.base.conf.js
+module.exports = {
+  // ...
+  vue: {
+    postcss: [/* your plugins */]
+  }
+}
+</code></pre><p>详细请参考：<a href="http://vuejs.github.io/vue-loader/en/features/postcss.html" target="_blank" rel="external">vue-loader’s related documentation</a></p>
+<h3 id="7-独立的CSS文件"><a href="#7-独立的CSS文件" class="headerlink" title="7. 独立的CSS文件"></a>7. 独立的CSS文件</h3><p>为了坚持一贯的组件化和预处理，建议在App.vue中导入全局的独立样式文件，例如：</p>
+<pre><code>&lt;!-- App.vue --&gt;    
+&lt;style src=&quot;./styles/global.less&quot; lang=&quot;less&quot;&gt;&lt;/style&gt;
+</code></pre><p>注意： 导入的独立样式文件是你自己为该单页面应用所编写的，如果是一些库的样式文件，你可以放在<code>/static</code>文件夹中，然后在index.html中直接引用    。这避免了额外的build时间，也有利于浏览器的缓存（参考：<a href="https://vuejs-templates.github.io/webpack/static.html" target="_blank" rel="external">Static Asset Handling</a>）</p>
+<h3 id="8-静态资源的处理"><a href="#8-静态资源的处理" class="headerlink" title="8. 静态资源的处理"></a>8. 静态资源的处理</h3><p>你已经看到了，在项目中有两个和静态资源相关的文件夹：<code>src/assets</code>和<code>static/</code>, 它们之间有什么不同呢？</p>
+<h4 id="webpack-处理的静态资源：-src-assets"><a href="#webpack-处理的静态资源：-src-assets" class="headerlink" title="webpack 处理的静态资源： /src/assets"></a>webpack 处理的静态资源： /src/assets</h4><p>为了回答上述问题，首先要明白<code>webpack</code>怎么处理静态资源。在<code>*.vue</code>文件中，<code>template</code>和<code>css</code>都会被<code>vue-html-loader</code>和<code>css-loader</code>处理，它们会查找静态资源的<code>URL</code>。比如，在<code>&lt;img src=&#39;./logo.png&#39;</code>、<code>background: url(./logo.png)</code>,其中的<code>./logo.png</code>都是相对路径，这些会被webpack作为模块依赖进行处理。</p>
+<p>因为<code>logo.png</code>不是 JavaScript,作为一个依赖来对待，就需要<code>url-loader</code>和<code>file-loader</code>来处理，样板工程已经帮你配置好了，处理后的文件会带有签名，以及在限制大小后转化成base64，所以你可以使用相对路径而不用担心部署的问题。</p>
+<p>由于在build过程中<code>assets</code>中的资源可能被处理成base64、被复制、重命名，它们本质上是源代码的一部分。这就是问什么建议将需要webpack处理的资源放到<code>src</code>下，而把不需要处理的放到其他目录。实际上，静态文件不必须放到<code>/src/assets</code>目录下，你可以根据<code>module/component</code>来组织相应的静态文件。比如你可以为每一个组件和他的静态文件建立一个文件夹，</p>
+<h4 id="Asset-处理规则"><a href="#Asset-处理规则" class="headerlink" title="Asset 处理规则"></a>Asset 处理规则</h4><ul>
+<li><p>相对路径： 比如<code>./assets/logo.png</code> 将作为模块依赖被处理，它们将会被webpack输出配置自动生成的的URL替换。</p>
+</li>
+<li><p>没有前缀的路径和相对路径一样： <code>assets/logo.png</code>会转换成 <code>./aseets/logo.png</code></p>
+</li>
+<li><p>使用<code>~</code>前缀：<code>~</code> are treated as a module request, similar to <code>require(&#39;some-module/image.png&#39;)</code>. You need to use this prefix if you want to leverage Webpack’s module resolving configurations. For example if you have a resolve alias for assets, you need to use <code>&lt;img src=&quot;~assets/logo.png&quot;&gt;</code> to ensure that alias is respected.</p>
+</li>
+<li><p>绝对路径：<code>/assets/logo.png</code>不会被处理</p>
+</li>
+</ul>
+<h4 id="使用JavaScript获得资源路径"><a href="#使用JavaScript获得资源路径" class="headerlink" title="使用JavaScript获得资源路径"></a>使用JavaScript获得资源路径</h4><p>为了使webpack能返回一个正确的资源路径，你需要使用<code>require(&#39;./relative/path/to/file.jpg&#39;)</code> ，这样会被<code>file-loader</code>处理，然后返回一个处理后的URL。例如：</p>
+<pre><code>computed: {
+  background () {
+    return require(&apos;./bgs/&apos; + this.id + &apos;.jpg&apos;)
+  }
+}
+</code></pre><h4 id="“真正”的静态文件"><a href="#“真正”的静态文件" class="headerlink" title="“真正”的静态文件"></a>“真正”的静态文件</h4><p>作为比较，<code>static/</code>目录下的文件都不会被webpack处理，它们会被原封不动的复制到最终的目录。所以必须使用绝对路径引用它们，这些有配置文件<code>config.js</code>中的<code>bulid.assetsPublicPath</code>和<code>build.assetsSubDirectory</code>联合决定。</p>
+<p>下面是默认配置：</p>
+<pre><code>// config.js
+module.exports = {
+  // ...
+  build: {
+    assetsPublicPath: &apos;/&apos;,
+    assetsSubDirectory: &apos;static&apos;
+  }
+}
+</code></pre><p>所有放在<code>static/</code>目录下的文件应该使用绝对路径<code>/static/[filename]</code>。如果你将<code>assetSubDirectory</code>改成<code>assets</code>,那绝对路径的url也需要改变为<code>/assets/[filename]</code></p>
+<p>更详细的配置请参考<a href="https://vuejs-templates.github.io/webpack/backend.html" target="_blank" rel="external">backend integration</a></p>
+<h3 id="9-环境变量"><a href="#9-环境变量" class="headerlink" title="9. 环境变量"></a>9. 环境变量</h3><p>有时开发的应用要运行于不同的环境下，这就需要配置环境变量。</p>
+<p>例子：</p>
+<pre><code>// config/prod.env.js
+module.exports = {
+  NODE_ENV: &apos;&quot;production&quot;&apos;,
+  DEBUG_MODE: false,
+  API_KEY: &apos;&quot;...&quot;&apos; // this is shared between all environments
+}
+
+// config/dev.env.js
+module.exports = merge(prodEnv, {
+  NODE_ENV: &apos;&quot;development&quot;&apos;,
+  DEBUG_MODE: true // this overrides the DEBUG_MODE value of prod.env
+})
+
+// config/test.env.js
+module.exports = merge(devEnv, {
+  NODE_ENV: &apos;&quot;testing&quot;&apos;
+})
+</code></pre><p>注意： 字符串变量需要包裹在单引号和双引号之间<code>&#39;&quot;...&quot;&#39;</code></p>
+<p>所以，环境变量包括：</p>
+<ul>
+<li><p>Production</p>
+<ul>
+<li>NODE_ENV = ‘production’,</li>
+<li>DEBUG_MODE = false,</li>
+<li>API_KEY = ‘…’</li>
+</ul>
+</li>
+<li><p>Development</p>
+<ul>
+<li>NODE_ENV = ‘development’,</li>
+<li>DEBUG_MODE = true,</li>
+<li>API_KEY = ‘…’</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Testing<ul>
+<li>NODE_ENV = ‘testing’,</li>
+<li>DEBUG_MODE = true,</li>
+<li>API_KEY = ‘…’</li>
+</ul>
+</li>
+</ul>
+<p>我们可以看到，test环境继承开发环境， 开发环境继承生产环境</p>
+<p>在你的代码中使用环境变量很容易：</p>
+<pre><code>Vue.config.debug = process.env.DEBUG_MODE  
+</code></pre><h3 id="10-和后端框架的整合"><a href="#10-和后端框架的整合" class="headerlink" title="10. 和后端框架的整合"></a>10. 和后端框架的整合</h3><p>如果你编写的是一个纯静态的应用（不需要后端api），你可能不需要编辑<code>config/index.js</code>文件。然而，如果你想使用这个样板工程和现有的后端进行整合，你可以通过编辑<code>config/index.js</code>文件而直接产生前端资源到后端项目。</p>
+<p>让我们看一下默认配置<code>config/index.js</code>:</p>
+<pre><code>var path = require(&apos;path&apos;)
+
+module.exports = {
+  build: {
+    index: path.resolve(__dirname, &apos;dist/index.html&apos;),
+    assetsRoot: path.resolve(__dirname, &apos;dist&apos;),
+    assetsSubDirectory: &apos;static&apos;,
+    assetsPublicPath: &apos;/&apos;,
+    productionSourceMap: true
+  },
+  dev: {
+    port: 8080,
+    proxyTable: {}
+  }
+}
+</code></pre><p>其中<code>build</code>部分包括以下选项：</p>
+<h5 id="index"><a href="#index" class="headerlink" title="index"></a><code>index</code></h5><blockquote>
+<p>须是当前系统下的绝对路径</p>
+</blockquote>
+<p>这个目录是存储生成的已经注入静态资源后的index.html文件</p>
+<p>如果你的后端框架使用了模版，你可以相应的修改<code>index.html</code>，将这个路径指向后端程序要渲染的视图文件</p>
+<h5 id="assetsRoot"><a href="#assetsRoot" class="headerlink" title="assetsRoot"></a><code>assetsRoot</code></h5><blockquote>
+<p>须是当前系统下的绝对路径</p>
+</blockquote>
+<p>这个目录指向应用存放所有静态资源的路径</p>
+<h5 id="assetsSubDIrectiory"><a href="#assetsSubDIrectiory" class="headerlink" title="assetsSubDIrectiory"></a><code>assetsSubDIrectiory</code></h5><p>webpack产生的静态资源会存放于<code>build.assetsRoot</code>下的这个目录，这样，它们就不会和<code>build.assetsRoot</code>下的其他静态文件混合在一起。例如，如果<code>build.assetsRoot</code>是<code>/path/to/dist</code>，<code>build.assetsSubDIrectiory</code>是<code>static</code>，这样，所有的webpack处理的静态资源都会在<code>path/to/dist/static</code>下。</p>
+<p>这个文件夹在每次执行<code>build</code>之前都会被清空，所以它应该只包含build过程产生的静态资源。</p>
+<p>在<code>static/</code>下的文件在build的过程中会被直接复制到这个文件夹下。这意味着如果你改变了这个前提，其他所有的依赖于这个目录的绝对路径也要被修改。查看更多细节<a href="http://vuejs-templates.github.io/webpack/static.html" target="_blank" rel="external">Handling Static Assets</a></p>
+<h5 id="assetsPublicPath"><a href="#assetsPublicPath" class="headerlink" title="assetsPublicPath"></a><code>assetsPublicPath</code></h5><p>HTTP服务在<code>assetsPublicPath</code> 配置的路径下取得<code>assetsRoot</code>中的静态资源。<br>在大部分情况，这个配置时跟目录<code>/</code>，当你的后端框架提供了带有前缀的静态资源路径时需要改动这个配置。<br>在内部，这个配置会作为<code>output.publicPath</code>传递给webpack</p>
+<h5 id="productionSourceMap"><a href="#productionSourceMap" class="headerlink" title="productionSourceMap"></a><code>productionSourceMap</code></h5><p>build时是否产生资源文件的maps文件</p>
+<h5 id="port"><a href="#port" class="headerlink" title="port"></a><code>port</code></h5><p>开发环境监听的端口号</p>
+<h5 id="proxyTable"><a href="#proxyTable" class="headerlink" title="proxyTable"></a><code>proxyTable</code></h5><p>定义开发环境的代理规则，查看更多细节<a href="http://vuejs-templates.github.io/webpack/proxy.html" target="_blank" rel="external">API Proxying During Development</a></p>
+<h3 id="11-开发环境下API代理的配置"><a href="#11-开发环境下API代理的配置" class="headerlink" title="11. 开发环境下API代理的配置"></a>11. 开发环境下API代理的配置</h3><p>当和已有的后端进行整合的时候，一个共同的需求就是在使用启动本地开发服务后调用后端借口。<br>为了解决这个问题，我们可以配置config/index.js下的dev.proxyTable选项。这个开发服务使用了<a href="https://github.com/chimurai/http-proxy-middleware" target="_blank" rel="external">http-proxy-middleware</a>作为代理。所以你可以查看它的文档，获得更细节的配置。这是一个简单的样例</p>
+<pre><code>// config/index.js
+module.exports = {
+  // ...
+  dev: {
+    proxyTable: {
+      // proxy all requests starting with /api to jsonplaceholder
+      &apos;/api&apos;: {
+        target: &apos;http://jsonplaceholder.typicode.com&apos;,
+        changeOrigin: true,
+        pathRewrite: {
+          &apos;^/api&apos;: &apos;&apos;
+        }
+      }
+    }
+  }
+}
+</code></pre><p>上述配置将请求<code>/api/posts/1</code>代理到<code>http://jsonplaceholder.typicode.com/posts/1</code></p>
+<ul>
+<li><a href="http://vuejs-templates.github.io/webpack/unit.html" target="_blank" rel="external">单元测试</a>，</li>
+<li><a href="http://vuejs-templates.github.io/webpack/e2e.html" target="_blank" rel="external">端到端测试</a>，</li>
+<li><a href="http://vuejs-templates.github.io/webpack/prerender.html" target="_blank" rel="external">SEO优化</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">翻译</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">vue-cli</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/08/veux-ont/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vuex使用笔记－－项目结构</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="vue-cli-structure" data-title="vue-cli目录结构以及配置说明" data-url="http://yoursite.com/2017/02/23/vue-cli-structure/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 DKing
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true,
+		showTags: false
+	}
+</script>
+
+<script>!function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var e={};return n.m=t,n.c=e,n.p="./",n(0)}([function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function o(t,n){var e=/\/|index.html/g;return t.replace(e,"")===n.replace(e,"")}function i(){for(var t=document.querySelectorAll(".js-header-menu li a"),n=window.location.pathname,e=0,r=t.length;e<r;e++){var i=t[e];o(n,i.getAttribute("href"))&&(0,d.default)(i,"active")}}function u(t){for(var n=t.offsetLeft,e=t.offsetParent;null!==e;)n+=e.offsetLeft,e=e.offsetParent;return n}function f(t){for(var n=t.offsetTop,e=t.offsetParent;null!==e;)n+=e.offsetTop,e=e.offsetParent;return n}function c(t,n,e,r,o){var i=u(t),c=f(t)-n;if(c-e<=o){var a=t.$newDom;a||(a=t.cloneNode(!0),(0,h.default)(t,a),t.$newDom=a,a.style.position="fixed",a.style.top=(e||c)+"px",a.style.left=i+"px",a.style.zIndex=r||2,a.style.width="100%",a.style.color="#fff"),a.style.visibility="visible",t.style.visibility="hidden"}else{t.style.visibility="visible";var s=t.$newDom;s&&(s.style.visibility="hidden")}}function a(){var t=document.querySelector(".js-overlay"),n=document.querySelector(".js-header-menu");c(t,document.body.scrollTop,-63,2,0),c(n,document.body.scrollTop,1,3,0)}function s(){document.querySelector("#container").addEventListener("scroll",function(t){a()}),window.addEventListener("scroll",function(t){a()}),a()}function l(){x.default.versions.mobile&&window.screen.width<800&&(i(),s())}var p=e(71),d=r(p),v=e(72),y=(r(v),e(84)),h=r(y),b=e(69),x=r(b),m=e(75),g=r(m),w=e(70);l(),(0,w.addLoadEvent)(function(){g.default.init()}),t.exports={}},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(49),o=e(15);t.exports=function(t){return r(o(t))}},function(t,n,e){t.exports=!e(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n,e){var r=e(6),o=e(12);t.exports=e(4)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(10),o=e(30),i=e(24),u=Object.defineProperty;n.f=e(4)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(22)("wks"),o=e(13),i=e(1).Symbol,u="function"==typeof i,f=t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)("Symbol."+t))};f.store=r},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(35),o=e(16);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){var e=t.exports={version:"2.4.0"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(6).f,o=e(2),i=e(7)("toStringTag");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(22)("keys"),o=e(13);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(1),o=e(14),i=e(18),u=e(26),f=e(6).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||f(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(7)},function(t,n,e){var r=e(1),o=e(14),i=e(46),u=e(5),f="prototype",c=function(t,n,e){var a,s,l,p=t&c.F,d=t&c.G,v=t&c.S,y=t&c.P,h=t&c.B,b=t&c.W,x=d?o:o[n]||(o[n]={}),m=x[f],g=d?r:v?r[n]:(r[n]||{})[f];d&&(e=n);for(a in e)s=!p&&g&&void 0!==g[a],s&&a in x||(l=s?g[a]:e[a],x[a]=d&&"function"!=typeof g[a]?e[a]:h&&s?i(l,r):b&&g[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[f]=t[f],n}(l):y&&"function"==typeof l?i(Function.call,l):l,y&&((x.virtual||(x.virtual={}))[a]=l,t&c.R&&m&&!m[a]&&u(m,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(4)&&!e(8)(function(){return 7!=Object.defineProperty(e(29)("div"),"a",{get:function(){return 7}}).a})},function(t,n,e){"use strict";var r=e(18),o=e(27),i=e(36),u=e(5),f=e(2),c=e(17),a=e(51),s=e(20),l=e(58),p=e(7)("iterator"),d=!([].keys&&"next"in[].keys()),v="@@iterator",y="keys",h="values",b=function(){return this};t.exports=function(t,n,e,x,m,g,w){a(e,n,x);var O,S,_,j=function(t){if(!d&&t in A)return A[t];switch(t){case y:return function(){return new e(this,t)};case h:return function(){return new e(this,t)}}return function(){return new e(this,t)}},P=n+" Iterator",E=m==h,M=!1,A=t.prototype,T=A[p]||A[v]||m&&A[m],L=T||j(m),N=m?E?j("entries"):L:void 0,C="Array"==n?A.entries||T:T;if(C&&(_=l(C.call(new t)),_!==Object.prototype&&(s(_,P,!0),r||f(_,p)||u(_,p,b))),E&&T&&T.name!==h&&(M=!0,L=function(){return T.call(this)}),r&&!w||!d&&!M&&A[p]||u(A,p,L),c[n]=L,c[P]=b,m)if(O={values:E?L:j(h),keys:g?L:j(y),entries:N},w)for(S in O)S in A||i(A,S,O[S]);else o(o.P+o.F*(d||M),n,O);return O}},function(t,n,e){var r=e(10),o=e(55),i=e(16),u=e(21)("IE_PROTO"),f=function(){},c="prototype",a=function(){var t,n=e(29)("iframe"),r=i.length,o="<",u=">";for(n.style.display="none",e(48).appendChild(n),n.src="javascript:",t=n.contentWindow.document,t.open(),t.write(o+"script"+u+"document.F=Object"+o+"/script"+u),t.close(),a=t.F;r--;)delete a[c][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(f[c]=r(t),e=new f,f[c]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n,e){var r=e(35),o=e(16).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(2),o=e(3),i=e(45)(!1),u=e(21)("IE_PROTO");t.exports=function(t,n){var e,f=o(t),c=0,a=[];for(e in f)e!=u&&r(f,e)&&a.push(e);for(;n.length>c;)r(f,e=n[c++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(5)},function(t,n,e){var r=e(15);t.exports=function(t){return Object(r(t))}},function(t,n,e){t.exports={default:e(41),__esModule:!0}},function(t,n,e){t.exports={default:e(42),__esModule:!0}},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(39),i=r(o),u=e(38),f=r(u),c="function"==typeof f.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":typeof t};n.default="function"==typeof f.default&&"symbol"===c(i.default)?function(t){return"undefined"==typeof t?"undefined":c(t)}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":"undefined"==typeof t?"undefined":c(t)}},function(t,n,e){e(65),e(63),e(66),e(67),t.exports=e(14).Symbol},function(t,n,e){e(64),e(68),t.exports=e(26).f("iterator")},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(3),o=e(61),i=e(60);t.exports=function(t){return function(n,e,u){var f,c=r(n),a=o(c.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if(f=c[s++],f!=f)return!0}else for(;a>s;s++)if((t||s in c)&&c[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(43);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(9),o=e(34),i=e(19);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,f=e(t),c=i.f,a=0;f.length>a;)c.call(t,u=f[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(28);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n,e){var r=e(28);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){"use strict";var r=e(32),o=e(12),i=e(20),u={};e(5)(u,e(7)("iterator"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+" Iterator")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(9),o=e(3);t.exports=function(t,n){for(var e,i=o(t),u=r(i),f=u.length,c=0;f>c;)if(i[e=u[c++]]===n)return e}},function(t,n,e){var r=e(13)("meta"),o=e(11),i=e(2),u=e(6).f,f=0,c=Object.isExtensible||function(){return!0},a=!e(8)(function(){return c(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:"O"+ ++f,w:{}}})},l=function(t,n){if(!o(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!c(t))return"F";if(!n)return"E";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!c(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&v.NEED&&c(t)&&!i(t,r)&&s(t),t},v=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){var r=e(6),o=e(10),i=e(9);t.exports=e(4)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),f=u.length,c=0;f>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(19),o=e(12),i=e(3),u=e(24),f=e(2),c=e(30),a=Object.getOwnPropertyDescriptor;n.f=e(4)?a:function(t,n){if(t=i(t),n=u(n,!0),c)try{return a(t,n)}catch(t){}if(f(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(3),o=e(33).f,i={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],f=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?f(t):o(r(t))}},function(t,n,e){var r=e(2),o=e(37),i=e(21)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(23),o=e(15);t.exports=function(t){return function(n,e){var i,u,f=String(o(n)),c=r(e),a=f.length;return c<0||c>=a?t?"":void 0:(i=f.charCodeAt(c),i<55296||i>56319||c+1===a||(u=f.charCodeAt(c+1))<56320||u>57343?t?f.charAt(c):i:t?f.slice(c,c+2):(i-55296<<10)+(u-56320)+65536)}}},function(t,n,e){var r=e(23),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(23),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){"use strict";var r=e(44),o=e(52),i=e(17),u=e(3);t.exports=e(31)(Array,"Array",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):"keys"==n?o(0,e):"values"==n?o(0,t[e]):o(0,[e,t[e]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,n){},function(t,n,e){"use strict";var r=e(59)(!0);e(31)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){"use strict";var r=e(1),o=e(2),i=e(4),u=e(27),f=e(36),c=e(54).KEY,a=e(8),s=e(22),l=e(20),p=e(13),d=e(7),v=e(26),y=e(25),h=e(53),b=e(47),x=e(50),m=e(10),g=e(3),w=e(24),O=e(12),S=e(32),_=e(57),j=e(56),P=e(6),E=e(9),M=j.f,A=P.f,T=_.f,L=r.Symbol,N=r.JSON,C=N&&N.stringify,k="prototype",F=d("_hidden"),q=d("toPrimitive"),I={}.propertyIsEnumerable,B=s("symbol-registry"),D=s("symbols"),W=s("op-symbols"),H=Object[k],K="function"==typeof L,R=r.QObject,J=!R||!R[k]||!R[k].findChild,U=i&&a(function(){return 7!=S(A({},"a",{get:function(){return A(this,"a",{value:7}).a}})).a})?function(t,n,e){var r=M(H,n);r&&delete H[n],A(t,n,e),r&&t!==H&&A(H,n,r)}:A,G=function(t){var n=D[t]=S(L[k]);return n._k=t,n},$=K&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},z=function(t,n,e){return t===H&&z(W,n,e),m(t),n=w(n,!0),m(e),o(D,n)?(e.enumerable?(o(t,F)&&t[F][n]&&(t[F][n]=!1),e=S(e,{enumerable:O(0,!1)})):(o(t,F)||A(t,F,O(1,{})),t[F][n]=!0),U(t,n,e)):A(t,n,e)},Y=function(t,n){m(t);for(var e,r=b(n=g(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?S(t):Y(S(t),n)},X=function(t){var n=I.call(this,t=w(t,!0));return!(this===H&&o(D,t)&&!o(W,t))&&(!(n||!o(this,t)||!o(D,t)||o(this,F)&&this[F][t])||n)},V=function(t,n){if(t=g(t),n=w(n,!0),t!==H||!o(D,n)||o(W,n)){var e=M(t,n);return!e||!o(D,n)||o(t,F)&&t[F][n]||(e.enumerable=!0),e}},Z=function(t){for(var n,e=T(g(t)),r=[],i=0;e.length>i;)o(D,n=e[i++])||n==F||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===H,r=T(e?W:g(t)),i=[],u=0;r.length>u;)!o(D,n=r[u++])||e&&!o(H,n)||i.push(D[n]);return i};K||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===H&&n.call(W,e),o(this,F)&&o(this[F],t)&&(this[F][t]=!1),U(this,t,O(1,e))};return i&&J&&U(H,t,{configurable:!0,set:n}),G(t)},f(L[k],"toString",function(){return this._k}),j.f=V,P.f=z,e(33).f=_.f=Z,e(19).f=X,e(34).f=tt,i&&!e(18)&&f(H,"propertyIsEnumerable",X,!0),v.f=function(t){return G(d(t))}),u(u.G+u.W+u.F*!K,{Symbol:L});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var nt=E(d.store),et=0;nt.length>et;)y(nt[et++]);u(u.S+u.F*!K,"Symbol",{for:function(t){return o(B,t+="")?B[t]:B[t]=L(t)},keyFor:function(t){if($(t))return h(B,t);throw TypeError(t+" is not a symbol!")},useSetter:function(){J=!0},useSimple:function(){J=!1}}),u(u.S+u.F*!K,"Object",{create:Q,defineProperty:z,defineProperties:Y,getOwnPropertyDescriptor:V,getOwnPropertyNames:Z,getOwnPropertySymbols:tt}),N&&u(u.S+u.F*(!K||a(function(){var t=L();return"[null]"!=C([t])||"{}"!=C({a:t})||"{}"!=C(Object(t))})),"JSON",{stringify:function(t){if(void 0!==t&&!$(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],"function"==typeof n&&(e=n),!e&&x(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!$(n))return n}),r[1]=n,C.apply(N,r)}}}),L[k][q]||e(5)(L[k],q,L[k].valueOf),l(L,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){e(25)("asyncIterator")},function(t,n,e){e(25)("observable")},function(t,n,e){e(62);for(var r=e(1),o=e(5),i=e(17),u=e(7)("toStringTag"),f=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],c=0;c<5;c++){var a=f[c],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(t,n){"use strict";var e={versions:function(){var t=window.navigator.userAgent;return{trident:t.indexOf("Trident")>-1,presto:t.indexOf("Presto")>-1,webKit:t.indexOf("AppleWebKit")>-1,gecko:t.indexOf("Gecko")>-1&&t.indexOf("KHTML")==-1,mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")>-1||t.indexOf("Linux")>-1,iPhone:t.indexOf("iPhone")>-1||t.indexOf("Mac")>-1,iPad:t.indexOf("iPad")>-1,webApp:t.indexOf("Safari")==-1,weixin:t.indexOf("MicroMessenger")==-1}}()};t.exports=e},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=e(40),i=r(o),u=function(){function t(t,n,e){return n||e?String.fromCharCode(n||e):o[t]||t}function n(t){return l[t]}var e=/&quot;|&lt;|&gt;|&amp;|&nbsp;|&apos;|&#(\d+);|&#(\d+)/g,r=/['<> "&]/g,o={"&quot;":'"',"&lt;":"<","&gt;":">","&amp;":"&","&nbsp;":" "},f=/\u00a0/g,c=/<br\s*\/?>/gi,a=/\r?\n/g,s=/\s/g,l={};for(var p in o)l[o[p]]=p;return o["&apos;"]="'",l["'"]="&#39;",{encode:function(t){return t?(""+t).replace(r,n).replace(a,"<br/>").replace(s,"&nbsp;"):""},decode:function(n){return n?(""+n).replace(c,"\n").replace(e,t).replace(f," "):""},encodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},encodeBase16forJSON:function(t){if(!t)return t;t=t.replace(/[\u4E00-\u9FBF]/gi,function(t){return escape(t).replace("%u","\\u")});for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},decodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e+=2)n.push(String.fromCharCode("0x"+t.slice(e,e+2)));return n.join("")},encodeObject:function(t){if(t instanceof Array)for(var n=0,e=t.length;e>n;n++)t[n]=u.encodeObject(t[n]);else if("object"==("undefined"==typeof t?"undefined":(0,i.default)(t)))for(var r in t)t[r]=u.encodeObject(t[r]);else if("string"==typeof t)return u.encode(t);return t},loadScript:function(t){var n=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(n),n.setAttribute("src",t)},addLoadEvent:function(t){var n=window.onload;"function"!=typeof window.onload?window.onload=t:window.onload=function(){n(),t()}}}}();t.exports=u},function(t,n){function e(t,n){t.classList?t.classList.add(n):t.className+=" "+n}t.exports=e},function(t,n){function e(t,n){if(t.classList)t.classList.remove(n);else{var e=new RegExp("(^|\\b)"+n.split(" ").join("|")+"(\\b|$)","gi");t.className=t.className.replace(e," ")}}t.exports=e},,,function(t,n){"use strict";function e(){var t=document.querySelector("#page-nav");if(t&&!document.querySelector("#page-nav .extend.prev")&&(t.innerHTML='<a class="extend prev disabled" rel="prev">&laquo; Prev</a>'+t.innerHTML),t&&!document.querySelector("#page-nav .extend.next")&&(t.innerHTML=t.innerHTML+'<a class="extend next disabled" rel="next">Next &raquo;</a>'),yiliaConfig&&yiliaConfig.open_in_new){var n=document.querySelectorAll(".article-entry a:not(.article-more-a)");n.forEach(function(t){t.setAttribute("target","_blank")})}var e=document.querySelector("#js-aboutme");e&&0!==e.length&&(e.innerHTML=e.innerText)}t.exports={init:e}},,,,,,,,,function(t,n){function e(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var e=t.nextSibling;return e?t.parentNode.insertBefore(n,e):t.parentNode.appendChild(n)}t.exports=e}])</script><script src="/./main.2d7529.js"></script><script>!function(){var e=function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)};e("/slider.885efe.js")}()</script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-nav header-menu">
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+
+    <ul style="width: 70%">
+    
+    
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      
+        
+    </ul>
+  </div>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">BEM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">翻译</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">vuex</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.ruanyifeng.com/home.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阮一峰</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.zhangxinxu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>张鑫旭</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">坚持&lt;br&gt;自律&lt;br&gt;会让你得到你想得到的一切&lt;br&gt;baikaishuixyz@yahoo.com</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
